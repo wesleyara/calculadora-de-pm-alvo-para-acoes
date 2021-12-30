@@ -1,7 +1,14 @@
 import React from "react";
+import Header from "./components-secondary/Header";
+import Calculadora from "./components-secondary/Calculadora";
 
 function App() {
-  return <div className="App">Olá mundo!</div>;
+  return (
+    <>
+      <Header />
+      <Calculadora />
+    </>
+  );
 }
 
 export default App;
