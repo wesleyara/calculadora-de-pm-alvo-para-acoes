@@ -1,0 +1,32 @@
+.containerCalc {
+    width: 500px;
+    margin: auto;
+    margin-top: 50px;
+    background-color: wheat;
+    padding: 50px;
+}
+
+h2 {
+    margin-left: 10px;
+}
+
+.values {
+    padding: 20px;
+    border: none;
+    background-color: white;
+    margin-left: 10px;
+    width: 150px;
+}
+
+.btn {
+    padding: 20px;
+    border: none;
+    background-color: white;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.answer {
+    margin-top: 50px;
+    margin-left: 10px;
+}
