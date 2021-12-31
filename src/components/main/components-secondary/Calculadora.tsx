@@ -50,6 +50,7 @@ export default function Calculadora() {
 }
 
 function calcular() {
+  const resposta = document.getElementById("answer") as HTMLDivElement;
   const valorQ: any = document.getElementById("valueQ");
   const valorPM: any = document.getElementById("valuePM");
   const valorA: any = document.getElementById("valueA");
@@ -68,5 +69,33 @@ function calcular() {
     desejado = (valueQ * valuePM + q * valueH) / (valueQ + q);
   }
 
-  console.log(q);
+  console.log(`ValueQ = ${valueQ}`);
+  console.log(`ValuePM = ${valuePM}`);
+  console.log(`ValueA = ${valueA}`);
+  console.log(`ValueH = ${valueH}`);
+  console.log(`Q = ${q}`);
+  console.log(`Desejado = ${desejado}`);
+
+  resposta.innerHTML = `
+  <hr>
+  <br>
+
+  <p>
+  Tendo em vista que você possui ${valueQ} cotas dessa ação a um preço médio de R$ ${valuePM
+    .toFixed(2)
+    .replace(
+      ".",
+      ",",
+    )}, desde que você compre mais ações no preço informado de R$ ${valueH
+    .toFixed(2)
+    .replace(".", ",")}, para atigir o preço médio alvo de R$ ${valueA
+    .toFixed(2)
+    .replace(".", ",")} ou menos, será necessário comprar: 
+    <br>
+    <br>
+    <h2 style="margin-left: 0px; text-align:center;">${q} ações no valor de R$ ${valueH
+    .toFixed(2)
+    .replace(".", ",")}.</h2>
+  </p>
+  `;
 }
