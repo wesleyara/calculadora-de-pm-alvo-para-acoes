@@ -1,0 +1,7 @@
+.containerContent {
+    width: calc(70% - 100px);
+    margin: auto;
+    margin-top: 50px;
+    background-color: wheat;
+    padding: 50px;
+}
