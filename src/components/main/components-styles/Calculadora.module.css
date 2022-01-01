@@ -1,5 +1,5 @@
 .containerCalc {
-    width: 500px;
+    width: 540px;
     margin: auto;
     margin-top: 50px;
     background-color: wheat;
@@ -15,7 +15,7 @@ h2 {
     border: none;
     background-color: white;
     margin-left: 10px;
-    width: 150px;
+    width: 170px;
 }
 
 .btn {
