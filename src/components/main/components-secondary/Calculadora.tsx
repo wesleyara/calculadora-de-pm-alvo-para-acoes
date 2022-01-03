@@ -6,7 +6,9 @@ export default function Calculadora() {
   return (
     <div className={style.containerCalc}>
       <div>
-        <h2>Insira sua quantidade de ações e seu preço médio:</h2>
+        <h2 className={style.subTitle}>
+          Insira sua quantidade de ações e seu preço médio:
+        </h2>
         <br />
         <input
           min={0}
@@ -24,7 +26,9 @@ export default function Calculadora() {
         />
         <br />
         <br />
-        <h2>Depois o seu valor de compra e preço médio alvo:</h2>
+        <h2 className={style.subTitle}>
+          Depois o seu valor de compra e preço médio alvo:
+        </h2>
         <br />
         <input
           min={0}
