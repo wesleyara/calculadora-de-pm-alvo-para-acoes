@@ -1,7 +1,12 @@
 .containerContent {
-    width: calc(70% - 100px);
+    width: calc(65% - 100px);
     margin: auto;
-    margin-top: 50px;
+    margin-top: 100px;
     background-color: wheat;
     padding: 50px;
+}
+
+.content {
+    text-align: justify;
+    font-size: 20px;
 }
