@@ -1,8 +1,12 @@
 .header {
     color: black;
-    overflow: hidden;  
-    display: flex;
-    justify-content: center;
-    margin-top: 80px;
+    overflow: auto;
+    text-align: center;
+    margin-top: 50px;
     font-size: 25px;
+}
+
+.sub {
+    font-weight: 100;
+    font-size: 22px;
 }
