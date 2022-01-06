@@ -26,6 +26,32 @@ export default function Conteudo() {
           trás desse recurso importantíssimo na vida de um investidor:
         </p>
         <br />
+        <h2 id="howtouse">Como usar a ferramenta?</h2>
+        <br />
+        <p>
+          Para utilizar a ferramenta, basta inserir seus dados do ativo que
+          deseja que seja calculado, segue o passo a passo:
+          <br />
+          <br />
+          1º Inserir a sua quantidade de ações atuais;
+          <br />
+          2º Inserir seu preço médio atual em R$;
+          <br />
+          3º Inserir o valor em R$ desejado para comprar o ativo;
+          <br />
+          4º Insira o preço médio alvo, ou seja, o que você deseja reduzir e
+          clique em calcular.
+          <br />
+          <br />
+          OBS:
+          <br />
+          - O valor de compra do ativo e o preço médio alvo sempre tem que ser
+          menor do que o seu preço médio atual, afinal de contas você quer
+          reduzir o seu preço médio;
+          <br />- O valor de compra tem que ser menor que o preço médio alvo,
+          pois somente assim será possivel reduzir o preço médio atual.
+        </p>
+        <br />
         <h2>O que é preço médio?</h2>
         <br />
         <p>

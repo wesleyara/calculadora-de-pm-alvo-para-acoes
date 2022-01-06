@@ -1,13 +1,14 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import React from "react";
 import style from "../components-styles/Calculadora.module.css";
+import scroll from "../images/mouse.svg";
 
 export default function Calculadora() {
   return (
     <div className={style.containerCalc}>
       <div>
         <h2 className={style.subTitle}>
-          Insira sua quantidade de ações e seu preço médio:
+          Insira sua quantidade de ações e seu preço médio em R$:
         </h2>
         <br />
         <input
@@ -27,7 +28,7 @@ export default function Calculadora() {
         <br />
         <br />
         <h2 className={style.subTitle}>
-          Depois o seu valor de compra e preço médio alvo:
+          Depois o seu valor de compra em R$ e preço médio alvo em R$:
         </h2>
         <br />
         <input
@@ -50,6 +51,21 @@ export default function Calculadora() {
           value="Calcular"
           onClick={calcular}
         />
+      </div>
+      <br />
+      <br />
+      <div className={style.scrollContainer}>
+        <a className={style.calcLink} href="#howtouse" rel="noreferrer">
+          <img
+            className={style.mouseInicio}
+            width="40px"
+            src={scroll}
+            alt="mouse"
+          />{" "}
+          <span className={style.spanInicio}>
+            Clique para saber como calcular
+          </span>
+        </a>
       </div>
 
       <div className={style.answer} id="answer"></div>
@@ -93,7 +109,7 @@ function calcular() {
     resposta.innerHTML = `
     <hr>
     <br>
-  
+
     <p>
     Tendo em vista que você possui ${valueQ} cotas dessa ação a um preço médio de R$ ${valuePM
       .toFixed(2)
@@ -104,7 +120,7 @@ function calcular() {
       .toFixed(2)
       .replace(".", ",")}, para atigir o preço médio alvo de R$ ${valueA
       .toFixed(2)
-      .replace(".", ",")} ou menos, será necessário comprar: 
+      .replace(".", ",")} ou menos, será necessário comprar:
       <br>
       <br>
       <h2 style="margin-left: 0px; text-align:center;">${q} ações no valor de R$ ${valueH
@@ -113,4 +129,6 @@ function calcular() {
     </p>
     `;
   }
+
+  console.log(process.env.API_URL);
 }
