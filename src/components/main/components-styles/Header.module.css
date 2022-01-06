@@ -1,9 +1,10 @@
 .header {
+    background: linear-gradient(180deg, #94fae6 0%, #befa94 100%);
     color: black;
-    overflow: auto;
+    overflow: hidden;
     text-align: center;
-    margin-top: 50px;
     font-size: 25px;
+    padding: 40px;
 }
 
 .sub {

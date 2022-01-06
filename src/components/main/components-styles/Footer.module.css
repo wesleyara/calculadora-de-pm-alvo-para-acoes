@@ -1,0 +1,21 @@
+.footer {
+    margin-top: 50px;
+    text-align: center;
+    padding: 30px;
+    background: linear-gradient(180deg, #94FAE6 0%, #BEFA94 100%);
+}
+
+.reserv {
+    font-size: 20px;
+}
+
+.copyright {
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+}
+
+.copyright:hover {
+  text-decoration: underline;
+  color: blue;
+}

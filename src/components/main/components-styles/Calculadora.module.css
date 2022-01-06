@@ -1,33 +1,60 @@
 .containerCalc {
-    width: 540px;
-    margin: auto;
-    margin-top: 50px;
-    background-color: wheat;
-    padding: 50px;
+  width: 560px;
+  margin: auto;
+  margin-top: 50px;
+  background: linear-gradient(180deg, #94fae6 0%, #befa94 100%);
+  padding: 50px;
 }
 
 .subTitle {
-    margin-left: 10px;
+  margin-left: 10px;
 }
 
 .values {
-    padding: 20px;
-    border: none;
-    background-color: white;
-    margin-left: 10px;
-    width: 170px;
+  padding: 20px;
+  border: none;
+  background-color: white;
+  margin-left: 10px;
+  width: 170px;
 }
 
 .btn {
-    padding: 20px;
-    border: none;
-    background-color: white;
-    margin-left: 10px;
-    cursor: pointer;
+  padding: 20px;
+  border: none;
+  background-color: white;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.calcLink {
+    text-decoration: none;
+    color: black;
+}
+
+.calcLink:hover {
+    color: blue;
+}
+
+.scroll {
+  color: white;
+}
+
+.scrollContainer {
+  width: 243px;
+  margin: auto;
+}
+
+.mouseInicio {
+  float: left;
+}
+
+.spanInicio {
+  margin-top: 10px;
+  float: right;
 }
 
 .answer {
-    margin-top: 50px;
-    margin-left: 10px;
-    font-weight: bold;
+  margin-top: 50px;
+  margin-left: 10px;
+  font-weight: bold;
 }
