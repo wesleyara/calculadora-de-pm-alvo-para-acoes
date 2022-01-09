@@ -25,3 +25,8 @@ yarn-error.log*
 # anotações
 
 anotações.md
+
+# ENV
+
+.env
+
