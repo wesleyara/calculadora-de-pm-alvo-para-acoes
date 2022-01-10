@@ -52,7 +52,8 @@ export default function Calculadora() {
           onClick={calcular}
         />
       </div>
-      <br />
+
+      <div className={style.answer} id="answer"></div>
       <br />
       <div className={style.scrollContainer}>
         <a className={style.calcLink} href="#howtouse" rel="noreferrer">
@@ -67,8 +68,7 @@ export default function Calculadora() {
           </span>
         </a>
       </div>
-
-      <div className={style.answer} id="answer"></div>
+      <br />
     </div>
   );
 }
@@ -129,6 +129,4 @@ function calcular() {
     </p>
     `;
   }
-
-  console.log(process.env.API_URL);
 }
