@@ -17,7 +17,7 @@ export default function Conteudo() {
         <br />
         <p>
           Com isso, surge essa ferramenta, a Calculadora de Preço Médio Alvo
-          nada mais é do que um recurso para o auxilio e melhor gestão do seu
+          nada mais é do que um recurso para o auxílio e melhor gestão do seu
           dinheiro investido, pois afinal de contas, quem não quer rentabilizar
           o máximo da sua grana? O recurso ajuda a calcular a quantidade de
           ativos necessários para alcançar seu preço médio alvo. Para entender
