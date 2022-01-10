@@ -58,3 +58,9 @@
   margin-left: 10px;
   font-weight: bold;
 }
+
+@media screen and (max-width: 500px) {
+    .containerCalc {
+        width: calc(100%-100px);
+    }
+}

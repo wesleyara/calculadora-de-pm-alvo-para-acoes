@@ -1,0 +1,46 @@
+.backHome {
+  display: flex;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background: linear-gradient(180deg, #94fae6 0%, #befa94 100%);
+  width: 18%;
+  padding: 20px;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+.backHome:hover {
+  background: white;
+}
+
+.backHome span {
+  margin-top: 3px;
+}
+
+.links {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+.containerPoliticas {
+  background: linear-gradient(180deg, #94fae6 0%, #befa94 100%);
+  padding: 50px;
+  width: calc(80%  - 100px);
+  margin: auto;
+  font-size: 20px;
+  text-align: justify;
+}
+
+.containerPoliticas h1 {
+  text-align: center;
+}
+
+.containerPoliticas ul {
+  margin-left: 20px;
+}
+
+.containerPoliticas a {
+  color: blue;
+}
