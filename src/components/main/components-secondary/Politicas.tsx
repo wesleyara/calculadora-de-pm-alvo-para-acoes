@@ -3,10 +3,14 @@ import style from "../components-styles/Politicas.module.css";
 import arrow from "../images/arrow-back.svg";
 
 export default function Politicas() {
+  setTimeout(() => {
+    const topo = document.getElementById("top") as HTMLDivElement;
+    topo.scrollIntoView();
+  }, 100);
   return (
     <>
       <a className={style.links} href="/">
-        <div className={style.backHome}>
+        <div id="top" className={style.backHome}>
           <img src={arrow} alt="" />
           <span>Voltar para a página inicial</span>
         </div>
