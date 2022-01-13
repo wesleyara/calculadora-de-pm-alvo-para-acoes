@@ -44,3 +44,16 @@
 .containerPoliticas a {
   color: blue;
 }
+
+@media screen and (max-width: 500px) {
+  .containerPoliticas {
+    padding: 30px;
+    width: 280px;
+  }
+
+  .backHome {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 250px;
+  }
+}

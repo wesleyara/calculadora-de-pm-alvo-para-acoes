@@ -27,12 +27,12 @@
 }
 
 .calcLink {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
 .calcLink:hover {
-    color: blue;
+  color: blue;
 }
 
 .scroll {
@@ -40,18 +40,12 @@
 }
 
 .scrollContainer {
-  width: 243px;
+  width: 250px;
+  height: 40px;
+  text-align: center;
   margin: auto;
 }
 
-.mouseInicio {
-  float: left;
-}
-
-.spanInicio {
-  margin-top: 10px;
-  float: right;
-}
 
 .answer {
   margin-top: 50px;
@@ -60,7 +54,34 @@
 }
 
 @media screen and (max-width: 500px) {
-    .containerCalc {
-        width: calc(100%-100px);
-    }
+  .containerCalc {
+    width: 250px;
+    font-size: 10px;
+    padding: 30px;
+    margin-top: 30px;
+  }
+
+  .values {
+    margin-top: 10px;
+    width: 153px;
+    padding: 12px;
+  }
+
+  .btn {
+    margin-top: 10px;
+    padding: 12px;
+  }
+
+  .scrollContainer {
+    margin-bottom: 20px;
+    width: 210px;
+  }
+
+  .answer {
+    margin-top: 30px;
+  }
+
+  .spanInicio {
+    font-size: 12px;
+  }
 }
