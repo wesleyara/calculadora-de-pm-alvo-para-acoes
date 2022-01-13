@@ -1,5 +1,6 @@
 import React from "react";
 import CookieConsent from "react-cookie-consent";
+import { Link } from "react-router-dom";
 import style from "../components-styles/Cookies.module.css";
 
 export default function Cookie() {
@@ -17,9 +18,9 @@ export default function Cookie() {
       >
         Utilizamos cookies essenciais para melhorar a experiência do usuário ao
         acessar este site, veja as{" "}
-        <a className={style.link} href="/politica-de-privacidade">
+        <Link className={style.link} to="/politica-de-privacidade">
           Política de Privacidade
-        </a>
+        </Link>
         .
       </CookieConsent>
     </>
