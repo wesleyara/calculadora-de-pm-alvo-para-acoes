@@ -1,5 +1,8 @@
 # Calculadora de preço médio alvo
 
+![Capturar](https://user-images.githubusercontent.com/89321125/149391040-bbf01c45-74e7-433f-82d1-9e30a2bae883.PNG)
+
+
 ### Contatos e redes sociais:
 
 <div style="display: inline_block">
@@ -17,6 +20,8 @@
   <img alt="Wesley-CSS" src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
 </div>
 <br>
+
+Link do site: <a href="precomedioalvo.com">precomedioalvo.com</a>
 
 ## Descrição:
 
@@ -37,7 +42,7 @@ deseja que seja calculado, segue o passo a passo:
 clique em calcular.
 <br>
 <div>
-
+![gif](https://user-images.githubusercontent.com/89321125/149391296-7d166d7a-9a3d-41ac-92d3-49e9683fb329.gif)
 </div>
 <br>
 OBS:
