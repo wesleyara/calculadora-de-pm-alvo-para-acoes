@@ -5,71 +5,74 @@ import scroll from "../images/mouse.svg";
 
 export default function Calculadora() {
   return (
-    <div className={style.containerCalc}>
-      <div>
-        <h2 className={style.subTitle}>
-          Insira sua quantidade de ações e seu preço médio em R$:
-        </h2>
-        <br />
-        <input
-          min={0}
-          type="number"
-          className={style.values}
-          placeholder="Quantidade de ações"
-          id="valueQ"
-        />
-        <input
-          min={0}
-          type="number"
-          className={style.values}
-          placeholder="Preço Médio em (R$)"
-          id="valuePM"
-        />
-        <br />
-        <br />
-        <h2 className={style.subTitle}>
-          Depois o seu valor de compra em R$ e preço médio alvo em R$:
-        </h2>
-        <br />
-        <input
-          min={0}
-          type="number"
-          className={style.values}
-          placeholder="Valor que vai comprar (R$)"
-          id="valueH"
-        />
-        <input
-          min={0}
-          type="number"
-          className={style.values}
-          placeholder="Preço Médio alvo (R$)"
-          id="valueA"
-        />
-        <input
-          type="button"
-          className={style.btn}
-          value="Calcular"
-          onClick={calcular}
-        />
-      </div>
+    <>
+      <div className={style.containerCalc}>
+        <div>
+          <h2 className={style.subTitle}>
+            Insira sua quantidade de ações e seu preço médio em R$:
+          </h2>
+          <br />
+          <input
+            min={0}
+            type="number"
+            className={style.values}
+            placeholder="Quantidade de ações"
+            id="valueQ"
+          />
+          <input
+            min={0}
+            type="number"
+            className={style.values}
+            placeholder="Preço Médio em (R$)"
+            id="valuePM"
+          />
+          <br />
+          <br />
+          <h2 className={style.subTitle}>
+            Depois o seu valor de compra em R$ e preço médio alvo em R$:
+          </h2>
+          <br />
+          <input
+            min={0}
+            type="number"
+            className={style.values}
+            placeholder="Valor que vai comprar (R$)"
+            id="valueH"
+          />
+          <input
+            min={0}
+            type="number"
+            className={style.values}
+            placeholder="Preço Médio alvo (R$)"
+            id="valueA"
+          />
+          <input
+            type="button"
+            className={style.btn}
+            value="Calcular"
+            onClick={calcular}
+          />
+        </div>
 
-      <div className={style.answer} id="answer"></div>
-      <br />
-      <div className={style.scrollContainer}>
-        <a className={style.calcLink} href="#howtouse" rel="noreferrer">
-          <img
-            className={style.mouseInicio}
-            width="40px"
-            src={scroll}
-            alt="mouse"
-          />{" "}
-          <span className={style.spanInicio}>
-            Clique para saber como calcular
-          </span>
-        </a>
+        <div className={style.answer} id="answer"></div>
+        <br />
+        <div className={style.scrollContainer}>
+          <a className={style.calcLink} href="#howtouse" rel="noreferrer">
+            <img
+              className={style.mouseInicio}
+              width="40px"
+              src={scroll}
+              alt="mouse"
+            />{" "}
+            <br />
+            <span className={style.spanInicio}>
+              Clique para saber como calcular
+            </span>
+          </a>
+        </div>
+        <div className={style.anuncio}></div>
       </div>
-      <br />
-    </div>
+    </>
   );
 }
 
@@ -105,6 +108,8 @@ function calcular() {
       q++;
       desejado = (valueQ * valuePM + q * valueH) / (valueQ + q);
     }
+
+    resposta.scrollIntoView();
 
     resposta.innerHTML = `
     <hr>
