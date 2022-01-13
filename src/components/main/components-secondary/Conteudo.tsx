@@ -1,5 +1,6 @@
 import React from "react";
 import style from "../components-styles/Conteudo.module.css";
+import gif from "../gif/Calcprecomedioalvo.gif";
 
 export default function Conteudo() {
   return (
@@ -41,6 +42,13 @@ export default function Conteudo() {
           <br />
           4º Insira o preço médio alvo, ou seja, o que você deseja reduzir e
           clique em calcular.
+          <br />
+          <br />
+          <div className={style.gifContent}>
+            <img src={gif} className={style.gif} />
+          </div>
+          <br />
+          <a href="#header">Voltar para o topo</a>
           <br />
           <br />
           OBS:
