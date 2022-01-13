@@ -1,13 +1,14 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import style from "../components-styles/Footer.module.css";
 
 export default function Footer() {
   return (
     <div className={style.footer}>
       <p className={style.reserv}>
-        <a className={style.copyright} href="/politica-de-privacidade">
+        <Link className={style.copyright} to="/politica-de-privacidade">
           Políticas de Privacidade
-        </a>
+        </Link>
       </p>
       <br />
       <a className={style.copyright} href="mailto:wesleyara.contato@gmail.com">
