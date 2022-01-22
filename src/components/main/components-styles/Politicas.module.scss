@@ -8,14 +8,14 @@
   padding: 20px;
   border: 2px solid black;
   cursor: pointer;
-}
 
-.backHome:hover {
-  background: white;
-}
+  span {
+    margin-top: 3px;
+  }
 
-.backHome span {
-  margin-top: 3px;
+  .backHome:hover {
+    background: white;
+  }
 }
 
 .links {
@@ -31,18 +31,18 @@
   margin: auto;
   font-size: 20px;
   text-align: justify;
-}
 
-.containerPoliticas h1 {
-  text-align: center;
-}
+  h1 {
+    text-align: center;
+  }
 
-.containerPoliticas ul {
-  margin-left: 20px;
-}
+  ul {
+    margin-left: 20px;
+  }
 
-.containerPoliticas a {
-  color: blue;
+  a {
+    color: blue;
+  }
 }
 
 @media screen and (max-width: 500px) {
