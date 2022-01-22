@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import React from "react";
-import style from "../components-styles/Calculadora.module.css";
+import style from "../components-styles/Calculadora.module.scss";
 import scroll from "../images/mouse.svg";
 
 export default function Calculadora() {

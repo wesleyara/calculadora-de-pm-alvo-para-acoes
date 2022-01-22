@@ -1,5 +1,5 @@
 import React from "react";
-import style from "../components-styles/Politicas.module.css";
+import style from "../components-styles/Politicas.module.scss";
 import arrow from "../images/arrow-back.svg";
 
 export default function Politicas() {

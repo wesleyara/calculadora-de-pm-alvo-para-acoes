@@ -1,7 +1,7 @@
 import React from "react";
 import CookieConsent from "react-cookie-consent";
 import { Link } from "react-router-dom";
-import style from "../components-styles/Cookies.module.css";
+import style from "../components-styles/Cookies.module.scss";
 
 export default function Cookie() {
   return (

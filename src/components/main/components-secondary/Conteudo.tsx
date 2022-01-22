@@ -1,5 +1,5 @@
 import React from "react";
-import style from "../components-styles/Conteudo.module.css";
+import style from "../components-styles/Conteudo.module.scss";
 import gif from "../gif/Calcprecomedioalvo.gif";
 
 export default function Conteudo() {
