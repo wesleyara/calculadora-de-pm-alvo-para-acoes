@@ -1,6 +1,5 @@
-import React from "react";
-import style from "../components-styles/Politicas.module.scss";
-import arrow from "../images/arrow-back.svg";
+import style from "./styles.module.scss";
+import arrow from "../../assets/images/arrow-back.svg";
 
 export default function Politicas() {
   setTimeout(() => {
