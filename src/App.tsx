@@ -1,20 +1,15 @@
-import React from "react";
-import Header from "./components/main/components-secondary/Header";
-import Calculadora from "./components/main/components-secondary/Calculadora";
-import Conteudo from "./components/main/components-secondary/Conteudo";
-import Footer from "./components/main/components-secondary/Footer";
-import Cookie from "./components/main/components-secondary/Cookies";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Politicas from "./pages/Politicas";
+import { Home } from "./pages/Home";
+import "./styles/global.scss";
 
-function App() {
+export default function App() {
   return (
-    <div className="corpo">
-      <Header />
-      <Cookie />
-      <Calculadora />
-      <Conteudo />
-      <Footer />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/politica-de-privacidade" element={<Politicas />} />
+      </Routes>
+    </Router>
   );
 }
-
-export default App;
