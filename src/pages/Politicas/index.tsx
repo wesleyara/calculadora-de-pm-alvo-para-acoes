@@ -1,20 +1,11 @@
-import style from "./styles.module.scss";
-import arrow from "../../assets/images/arrow-back.svg";
+import { Container } from "./styles";
+import { Button } from "../../components/Button";
 
 export default function Politicas() {
-  setTimeout(() => {
-    const topo = document.getElementById("top") as HTMLDivElement;
-    topo.scrollIntoView();
-  }, 100);
   return (
     <>
-      <a className={style.links} href="/">
-        <div id="top" className={style.backHome}>
-          <img src={arrow} alt="" />
-          <span>Voltar para a página inicial</span>
-        </div>
-      </a>
-      <div className={style.containerPoliticas}>
+      <Container>
+        <Button />
         <h1>Política de Privacidade</h1>
         <br />
         <p>
@@ -239,13 +230,8 @@ export default function Politicas() {
           </a>
           .
         </p>
-      </div>
-      <a className={style.links} href="/">
-        <div className={style.backHome}>
-          <img src={arrow} alt="" />
-          <span>Voltar para a página inicial</span>
-        </div>
-      </a>
+        <Button />
+      </Container>
     </>
   );
 }

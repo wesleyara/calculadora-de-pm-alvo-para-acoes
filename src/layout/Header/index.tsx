@@ -1,15 +1,15 @@
-import style from "./styles.module.scss";
+import { Container } from "./styles";
 
-export default function Header() {
+export function Header() {
   return (
-    <>
-      <div id="header" className={style.header}>
-        <h1>CALCULADORA DE PREÇO MÉDIO ALVO</h1>
-        <h3 className={style.sub}>
-          Calcule a quantidade de ativos necessários para alcançar seu preço
-          médio alvo!
-        </h3>
+    <Container id="header">
+      <div>
+        <h2>Preço Médio Alvo</h2>
+        <ul>
+          <li>Home</li>
+          <li>Blog</li>
+        </ul>
       </div>
-    </>
+    </Container>
   );
 }

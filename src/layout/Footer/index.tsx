@@ -1,22 +1,20 @@
-import { Link } from "react-router-dom";
-import style from "./styles.module.scss";
+import { useNavigate } from "react-router-dom";
+import { Container } from "./styles";
 
-export default function Footer() {
+export function Footer() {
+  const navigate = useNavigate();
+
+  function handleNavigate() {
+    navigate("/politica-de-privacidade");
+  }
   return (
-    <div className={style.footer}>
-      <p className={style.reserv}>
-        <Link className={style.copyright} to="/politica-de-privacidade">
-          Políticas de Privacidade
-        </Link>
+    <Container>
+      <p>
+        &copy; {new Date().getFullYear()} Wesley Araújo - Todos os direitos
+        reservados.
       </p>
-      <br />
-      <a className={style.copyright} href="mailto:wesleyara.contato@gmail.com">
-        <p>Desenvolvido por Wesley Araújo</p>
-      </a>
-      <br />
-      <p className={style.reserv}>
-        Todos os direitos reservados - Wesley Araújo.
-      </p>
-    </div>
+
+      <span onClick={handleNavigate}>Política de Privacidade</span>
+    </Container>
   );
 }
