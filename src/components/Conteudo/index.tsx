@@ -1,4 +1,3 @@
-import gif from "../../assets/video/Calcprecomedioalvo.gif";
 import { Container } from "./styles";
 
 export default function Conteudo() {
@@ -41,12 +40,6 @@ export default function Conteudo() {
         4º Insira o preço médio alvo, ou seja, o que você deseja reduzir e
         clique em calcular.
         <br />
-        <br />
-        <div className="gif">
-          <img src={gif} />
-        </div>
-        <br />
-        <a href="#header">Voltar para o topo</a>
         <br />
         OBS:
         <br />
