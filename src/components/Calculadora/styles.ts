@@ -41,6 +41,14 @@ export const Container = styled.main`
     background-color: white;
     cursor: pointer;
   }
+
+  .response {
+    text-align: justify;
+    h2 {
+      text-align: center;
+      margin-top: 15px;
+    }
+  }
 `;
 
 export const Scroll = styled.div`
