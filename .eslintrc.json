@@ -6,6 +6,7 @@
     "jest": true
   },
   "extends": [
+    "standard",
     "eslint:recommended",
     "plugin:prettier/recommended",
     "plugin:react/recommended",
@@ -19,17 +20,32 @@
     "ecmaVersion": 12,
     "sourceType": "module"
   },
+  "parser": "@typescript-eslint/parser",
   "plugins": [
     "react",
-    "@typescript-eslint"
+    "@typescript-eslint",
+    "eslint-plugin-import-helpers",
+    "prettier"
   ],
   "rules": {
+    "import/prefer-default-export": "off",
+    "prettier/prettier": "error",
     "react/react-in-jsx-scope": "off",
-    "no-unused-vars": [
-      "error",
+    "@typescript-eslint/ban-types": "off",
+    "no-unused-vars": "off",
+    "react/prop-types": "off",
+    "import/extensions": "off",
+    "import/no-unresolved": "off",
+    "react-hooks/exhaustive-deps": "off",
+    "import-helpers/order-imports": [
+      "warn",
       {
-        "argsIgnorePattern": "^_",
-        "varsIgnorePattern": "^_"
+        "newlinesBetween": "always",
+        "groups": ["module", "/^@shared/", ["parent", "sibling", "index"]],
+        "alphabetize": {
+          "order": "asc",
+          "ignoreCase": true
+        }
       }
     ]
   },
@@ -37,6 +53,5 @@
     "react": {
       "version": "detect"
     }
-  },
-  "parser": "@typescript-eslint/parser"
+  }
 }

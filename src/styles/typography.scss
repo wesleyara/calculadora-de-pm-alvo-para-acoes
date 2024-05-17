@@ -1,0 +1,81 @@
+/* Define o tamanho das fontes para h1 */
+h1 {
+  @apply font-barlow text-5xl font-bold md:text-6xl;
+  color: white;
+}
+
+/* Define o tamanho das fontes para h2 */
+h2 {
+  @apply font-barlow text-4xl font-bold md:text-5xl;
+  color: white;
+}
+
+/* Define o tamanho das fontes para h3 */
+h3 {
+  @apply font-barlow text-3xl font-bold md:text-4xl;
+  color: white;
+}
+
+/* Define o tamanho das fontes para h4 */
+h4 {
+  @apply font-barlow text-2xl font-bold md:text-3xl;
+  color: white;
+}
+
+/* Define o tamanho das fontes para h5 */
+h5 {
+  @apply font-barlow text-xl font-bold md:text-2xl;
+  color: white;
+}
+
+/* Define o tamanho das fontes para h6 */
+h6 {
+  @apply font-barlow text-lg font-bold md:text-xl;
+  color: white;
+}
+
+/* Define o tamanho das fontes para p */
+p, span {
+  @apply font-inter text-base md:text-lg;
+  color: white;
+}
+
+/* Define o tamanho das fontes para small */
+.small {
+  @apply text-sm md:text-base;
+}
+
+div,
+article,
+section,
+header,
+footer,
+p,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+figcaption,
+hr,
+pre,
+code,
+kbd,
+samp,
+table,
+caption,
+th,
+td,
+input,
+textarea,
+label,
+select {
+  @apply font-inter;
+}
+
+.window-width {
+  @apply w-11/12 md:w-[768px] lg:w-[1024px] xl:w-[1280px];
+}
