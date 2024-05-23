@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useToast } from "../ui/use-toast";
+import { calculateAssetsNeed } from "~/lib";
 
 const initialState = {
   assetsQuantity: 0,
@@ -64,22 +65,9 @@ export const Calculator = () => {
       });
     }
 
-    let quantity = 0;
+    const assets = calculateAssetsNeed(states);
 
-    let target =
-      (states.assetsQuantity * states.medianPrice +
-        quantity * states.buyValue) /
-      (states.assetsQuantity + quantity);
-
-    while (target > states.medianPriceTarget) {
-      quantity++;
-      target =
-        (states.assetsQuantity * states.medianPrice +
-          quantity * states.buyValue) /
-        (states.assetsQuantity + quantity);
-    }
-
-    setResult(quantity);
+    setResult(assets);
   };
 
   return (
