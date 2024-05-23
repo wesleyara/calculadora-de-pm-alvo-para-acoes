@@ -26,7 +26,7 @@ export const Calculator = () => {
     e.preventDefault();
     if (result > 0) {
       setResult(0);
-      setStates(initialState);
+      return setStates(initialState);
     }
     if (
       states.assetsQuantity === 0 ||
